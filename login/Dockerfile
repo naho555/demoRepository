@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Maven を使用してプロジェクトをビルド（テストはスキップ）
-RUN mvn -B clean package -DskipTests
+RUN mvn -B clean package -DskipTests -Dmaven.repo.local=/root/.m2/repository
 
 # 実行環境として OpenJDK を使用
 FROM openjdk:17-jdk-slim
