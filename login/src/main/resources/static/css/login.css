@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* ログイン画面 */
+
+
+ .contents {	
+	width: 380px;
+	height: 100vh;
+	height: 100svh;
+	background-color: white;
+	margin:0 auto 64px;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+ }
+
+
+
+/* main {
+	width: 390px;
+	min-height: 100vh;
+	min-height: 100svh;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	margin-bottom: 64px;
+	
+	
+}*/
+
+.form {
+	padding: 24px;
+}
+
+h2 {
+	font-size: 32px;
+	text-align: left;
+	margin-bottom: 14px;
+	color: rgb(76, 73, 81);
+}
+
+form, label, input, button {
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	display: inline-block;
+	width: 92%;
+	margin: 0 auto 14px;
+	padding: 18px 14px;
+	border-radius: 25px;
+	background-color: #ece7e9;
+	border: none;
+}
+
+.fa-solid, fa-circle-user {
+	padding-right: 12px;
+}
+
+button {
+	cursor: pointer;
+	font-size: 16px;
+	display: inline-block;
+	margin: 32px auto 0;
+	padding: 24px 32px;
+	width: 100%;
+	background-color: rgb(168, 61, 73);
+	border: none;
+	border-radius: 25px;
+	color: #ece7e9;
+}
+
+button:hover {
+	opacity: .7;
+}
+
+/* 新規登録 */
+
+.btn {
+	text-align: left;
+	padding: 0 24px;
+}
+
+p {
+	font-size: 14px;
+	color: #9a9c97;
+}
+
+a {
+	font-size: 14px;
+	text-decoration: none;
+	color: rgb(168, 61, 73);
+}
+
+a:hover {
+	opacity: .6;
+}
+
+.fa-solid, fa-circle-right, fa-lg-btn {
+	padding-left: 8px;
+}
+
+@media (min-width: 496px) {
+	
+body {
+	background-color: #a83d49;
+}	
+
+h2 {
+	font-size: 40px;
+}
+
+.contents {	
+	width: 440px;
+	height: 75vh;
+	height: 75svh;
+	padding: 14px;
+	margin: 80px auto 0;
+	justify-content: center;
+	background-color: rgba(255, 255, 255, 1);
+	border-radius: 18px;
+	
+	 } 
+	 
+	 input {
+		width:93%;
+	 }
+	 
+	 
+	 a {
+		font-size: 18px;
+	 }
+	 
+}
+
+@media (min-width: 960px) {
+	
+	.contents {
+		padding: 24px;
+		width: 700px;
+	}
+
+	input {
+		width: 95%;
+	}
+}
+
+
+
+
+

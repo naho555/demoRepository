@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+	<script src="https://kit.fontawesome.com/77f2f34f15.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/error.css">
+    <title>ERROR</title>
+</head>
+<body>
+    <h2><i class="fa-solid fa-circle-exclamation" style="color: #a83d51;"></i>ERROR</h2>
+    <p>お探しのページは存在しないか、アクセス権限がありません。</p>
+    <a th:href="@{/login}">戻る</a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="css/home.css">
+	<script src="https://kit.fontawesome.com/77f2f34f15.js" crossorigin="anonymous"></script>
+    <title>success</title>
+</head>
+<body>
+	<main>
+		<div class="contents">
+			<div class="home">
+				<h2><i class="fa-solid fa-circle-check" style="color: #a83d49;"></i>Success</h2>
+				<p>ようこそ、<br><span th:text="${email}"></span>さん!</p>
+			</div>
+
+			<div class="logout">
+				<form th:action="@{/logout}" method="post">
+				    <button type="submit">ログアウト</button>
+				</form>
+			</div>
+		</div>
+	</main>
+</body>
+</html>

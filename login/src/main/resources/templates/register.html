@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+	<script src="https://kit.fontawesome.com/77f2f34f15.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/login.css">
+    <title>Sign up</title>
+</head>
+<body>
+	<main>
+		<div class="contents">
+			
+			<!-- 登録画面 -->
+			<div class="form">
+			    <h2><i class="fa-solid fa-circle-user" style="color: #4c4951;"></i>Sign up</h2>
+			    <form th:action="@{/register}" method="post">
+			        <input type="email" id="email" name="email" value="" placeholder="E-Mail" required>
+			        <br>
+			        <input type="password" id="password" name="password" value="" placeholder="Password" required>
+			        <br>
+			        <button type="submit">NEXT</button>
+				</form>
+			</div>
+			
+			<!-- ログイン画面へ -->
+			<div class="btn">
+				<p>すでにアカウントをお持ちですか？<br><a href="/login">ログイン<i class="fa-solid fa-circle-right fa-lg" style="color: #a83d49;"></i></a></p>
+			</div>
+			
+		</div>
+	</main>
+    <p th:if="${error}" th:text="${error}" style="color: red;"></p>
+
+</body>
+</html>
